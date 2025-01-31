@@ -13,11 +13,11 @@ This project serves as an example of how to set up and use GitHub Actions in a N
 - **`package.json`**: Node.js project configuration file.
 - **`.github/workflows`**: Contains the GitHub Actions workflows.
 
-Installation
+## Installation
 
 To install and run the project locally, follow these steps:
 
-Clone the repository:
+## Clone the repository:
 
 git clone https://github.com/izadorasobral/github-actions-practice.git
 cd github-actions-practice
@@ -26,7 +26,7 @@ Install dependencies:
 
 npm install
 
-Usage
+## Usage
 
 To start the server, run the following command:
 
@@ -34,15 +34,15 @@ node server.js
 
 The server will be running at http://localhost:3000, displaying the message "Hello World, Izadora HERE!".
 
-Testing
+## Testing
 
 To run the tests, use the following command:
 
 npm test
 
-GitHub Actions Workflows
+## GitHub Actions Workflows
 
-CI Pipeline
+### CI Pipeline
 
 The basic CI workflow is configured in .github/workflows/ci.yml:
 
@@ -64,7 +64,7 @@ jobs:
     - name: Run a script
       run: echo "Hello, GitHub Actions!"
 
-Caching
+## Caching
 
 The caching workflow is configured in .github/workflows/cache.yml:
 
@@ -96,7 +96,7 @@ jobs:
         ls -la ~/.npm
         npm install
 
-Matrix Testing
+## Matrix Testing
 
 The matrix workflow for testing across different Node.js versions is configured in .github/workflows/matrix.yml:
 
@@ -126,7 +126,7 @@ jobs:
     - name: Run a script
       run: echo "Testing on Node.js ${{ matrix.node-version }}"
 
-Contribution
+## Contribution
 
 If you would like to contribute to this project, follow these steps:
 
@@ -146,7 +146,7 @@ git push origin my-new-feature
 
 Open a Pull Request for review.
 
-License
+## License
 
 This project is licensed under the ISC License. See the LICENSE file for more details.
 
