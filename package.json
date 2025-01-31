@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'Running tests...' && exit 0"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/izadorasobral/github-actions-practice/issues"
   },
-  "homepage": "https://github.com/izadorasobral/github-actions-practice#readme"
+  "homepage": "https://github.com/izadorasobral/github-actions-practice#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
 }
