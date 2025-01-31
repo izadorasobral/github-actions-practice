@@ -1,20 +1,17 @@
-GitHub Actions Practice
+# GitHub Actions Practice
 
 This project is a practice setup for GitHub Actions to automate testing and deployment. We use Node.js and Express to create a simple server and configure GitHub Actions workflows for Continuous Integration (CI), caching, and testing across multiple Node.js versions.
 
-Description
+## Description
 
 This project serves as an example of how to set up and use GitHub Actions in a Node.js development environment. We implemented a basic server with Express and added automated tests using Jest and Supertest. Additionally, we configured GitHub Actions workflows to automate CI, caching, and testing across different Node.js versions.
 
-Project Structure
+## Project Structure
 
-server.js: Basic server code using Node.js and Express.
-
-server.test.js: Automated tests using Jest and Supertest.
-
-package.json: Node.js project configuration file.
-
-.github/workflows: Contains the GitHub Actions workflows.
+- **`server.js`**: Basic server code using Node.js and Express.
+- **`server.test.js`**: Automated tests using Jest and Supertest.
+- **`package.json`**: Node.js project configuration file.
+- **`.github/workflows`**: Contains the GitHub Actions workflows.
 
 Installation
 
@@ -152,3 +149,5 @@ Open a Pull Request for review.
 License
 
 This project is licensed under the ISC License. See the LICENSE file for more details.
+
+
