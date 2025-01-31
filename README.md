@@ -1,6 +1,6 @@
-#GitHub Actions Practice
+GitHub Actions Practice
 
-##This project is a practice setup for GitHub Actions to automate testing and deployment. We use Node.js and Express to create a simple server and configure GitHub Actions workflows for Continuous Integration (CI), caching, and testing across multiple Node.js versions.
+This project is a practice setup for GitHub Actions to automate testing and deployment. We use Node.js and Express to create a simple server and configure GitHub Actions workflows for Continuous Integration (CI), caching, and testing across multiple Node.js versions.
 
 Description
 
