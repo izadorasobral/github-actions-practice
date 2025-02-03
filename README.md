@@ -167,7 +167,7 @@ Push to your branch:
 
 git push origin my-new-feature
 
-Open a Pull Request for review.
+Open a Pull Request for review. 
 
 ## License
 
