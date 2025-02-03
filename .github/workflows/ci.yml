@@ -13,36 +13,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Git config
-      run: |
-        git config --global user.name "Your Name"
-        git config --global user.email "your.email@example.com"
+      - name: Set up Git config
+        run: |
+          git config --global user.name "Your Name"
+          git config --global user.email "your.email@example.com"
 
-    - name: Check git status
-      run: |
-        git status
-        git log --oneline -n 5
+      - name: Check git status
+        run: |
+          git status
+          git log --oneline -n 5
 
-    - name: Clean git cache
-      run: git clean -fd
+      - name: Clean git cache
+        run: git clean -fd
 
-    - name: Clean npm cache
-      run: npm cache clean --force
+      - name: Clean npm cache
+        run: npm cache clean --force
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Run tests
-      run: npm test
+      - name: Run tests
+        run: npm test
 
-    - name: Debugging info
-      run: |
-        echo "Checking Git status..."
-        git status
-        echo "Listing files in the repository..."
-        ls -la
+      - name: Debugging info
+        run: |
+          echo "Checking Git status..."
+          git status
+          echo "Listing files in the repository..."
+          ls -la
 
 
