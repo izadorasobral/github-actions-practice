@@ -144,18 +144,18 @@ Fork the repository.
 
 ## Create a new branch:
 
-bash
+```bash
 git checkout -b my-new-feature
+```
 Make your changes and commit:
-
-bash
+```bash
 git commit -m "Add my new feature"
+```
 Push to your branch:
-
-bash
+```bash
 git push origin my-new-feature
 Open a Pull Request for review.
-
+```
 ## License
 This project is licensed under the ISC License. See the LICENSE file for more details.
 
