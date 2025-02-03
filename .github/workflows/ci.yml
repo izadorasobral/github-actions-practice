@@ -15,24 +15,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          token: ${{ secrets.GH_TOKEN }}
-
-      - name: Set up Git config
-        run: |
-          git config --global user.name "Your Name"
-          git config --global user.email "your.email@example.com"
-
-      - name: Check git status
-        run: |
-          git status
-          git log --oneline -n 5
-
-      - name: Clean git cache
-        run: git clean -fd
-
-      - name: Clean npm cache
-        run: npm cache clean --force
+          node-version: '18'  # Substitua pela versão do Node.js que você usa.
 
       - name: Install dependencies
         run: npm install
@@ -40,7 +27,7 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Debugging info
+      - name: Debugging info (opcional)
         run: |
           echo "Checking Git status..."
           git status
