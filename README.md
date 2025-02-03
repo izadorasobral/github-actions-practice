@@ -40,15 +40,16 @@ node server.js
 The server will be running at http://localhost:3000, displaying the message "Hello World, Izadora HERE!".
 ````
 
-Example Endpoints
+## Example Endpoints
 GET /: Returns "Hello World, Izadora HERE!"
 
-Environment Variables
+### Environment Variables
 Create a .env file in the root of the project and add the following:
 
 plaintext
 DATABASE_URL=your-database-url
 SECRET_KEY=your-secret-key
+
 Testing
 To run the tests, use the following command:
 
