@@ -4,26 +4,39 @@ This project is a practice setup for GitHub Actions to automate testing and depl
 
 ## Description
 
-This project serves as an example of how to set up and use GitHub Actions in a Node.jsdevelopment environment. We implemented a basic server with Express and added automated tests using Jest and Supertest. Additionally, we configured GitHub Actions workflows to automate CI, caching, and testing across different Node.jsversions.
+This project serves as an example of how to set up and use GitHub Actions in a Node.js development environment. We implemented a basic server with Express and added automated tests using Jest and Supertest. Additionally, we configured GitHub Actions workflows to automate CI, caching, and testing across different Node.js versions.
 
 ## Project Structure
 
-- **`server.js`**: Basic server code using Node.js and Express.
-- **`server.test.js`**: Automated tests using Jest and Supertest.
-- **`package.json`**: Node.js project configuration file.
-- **`.github/workflows`**: Contains the GitHub Actions workflows.
+- `server.js`: Basic server code using Node.js and Express.
+- `server.test.js`: Automated tests using Jest and Supertest.
+- `package.json`: Node.js project configuration file.
+- `.github/workflows`: Contains the GitHub Actions workflows.
 
 ## User Authentication
 
 We added user registration and authentication features with the following components:
+- **Registration**: A form to register new users, saving their information securely with hashed passwords.
+- **Login**: A form for users to log in with their credentials, authenticated using Passport.js.
+- **Logout**: Functionality to log users out and redirect them to the login page.
 
-Registration: A form to register new users, saving their information securely with hashed passwords.
+### Installation
 
-Login: A form for users to log in with their credentials, authenticated using Passport.js.
+To install and run the project locally, follow these steps:
 
-Logout: Functionality to log users out and redirect them to the login page.
+Clone the repository:
+```bash
+git clone https://github.com/izadorasobral/github-actions-practice.git
+cd github-actions-practice
+Install dependencies:
 
-## Installation
+bash
+npm install
+Clone the repository:
+```bash
+git clone https://github.com/izadorasobral/github-actions-practice.git
+cd github-actions-practice
+
 
 To install and run the project locally, follow these steps:
 
