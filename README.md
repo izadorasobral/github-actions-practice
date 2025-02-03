@@ -43,7 +43,7 @@ The server will be running at http://localhost:3000, displaying the message "Hel
 ## Example Endpoints
 GET /: Returns "Hello World, Izadora HERE!"
 
-### Environment Variables
+## Environment Variables
 Create a .env file in the root of the project and add the following:
 
 plaintext
