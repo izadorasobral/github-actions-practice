@@ -1,39 +1,32 @@
-{
-  "name": "github-actions-practice",
-  "version": "1.0.0",
-  "description": "This project is a practice setup for GitHub Actions to automate testing and deployment. We use Node.js and Express to create a simple server and configure GitHub Actions workflows for Continuous Integration (CI), caching, and testing across multiple Node.js versions.",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "start": "nodemon server.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/izadorasobral/github-actions-practice.git"
-  },
-  "bugs": {
-    "url": "https://github.com/izadorasobral/github-actions-practice/issues"
-  },
-  "homepage": "https://github.com/izadorasobral/github-actions-practice#readme",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "connect-flash": "^0.1.1",
-    "ejs": "^3.1.10",
-    "express": "^4.21.2",
-    "express-session": "^1.18.1",
-    "express-validator": "^7.2.1",
-    "mongoose": "^8.9.5",
-    "passport": "^0.7.0",
-    "passport-local": "^1.0.0",
-    "portfinder": "^1.0.32",
-    "sqlite3": "^5.1.7"
-  },
-  "devDependencies": {
-    "jest": "^29.7.0",
-    "nodemon": "^3.1.9",
-    "supertest": "^7.0.0"
-  },
-  "keywords": []
-}
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: npm test
+
+    - name: Debugging
+      run: |
+        echo "Checking current directory..."
+        ls -la
+        echo "Checking Git status..."
+        git status
