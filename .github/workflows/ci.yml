@@ -21,6 +21,14 @@ jobs:
         git config --global user.name "Your Name"
         git config --global user.email "your.email@example.com"
 
+    - name: Check git status
+      run: |
+        git status
+        git log --oneline -n 5
+
+    - name: Clean git cache
+      run: git clean -fd
+
     - name: Clean npm cache
       run: npm cache clean --force
 
@@ -36,7 +44,5 @@ jobs:
         git status
         echo "Listing files in the repository..."
         ls -la
-
-
 
 
