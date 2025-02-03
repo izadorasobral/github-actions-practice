@@ -171,6 +171,6 @@ Open a Pull Request for review.
 
 ## License
 
-This project is licensed under the ISC License. See the LICENSE file for more details.
+This project is licensed under the ISC License. See the LICENSE file for more details
 
 
