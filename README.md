@@ -25,17 +25,17 @@ We added user registration and authentication features with the following compon
 To install and run the project locally, follow these steps:
 
 Clone the repository:
-```bash
-git clone https://github.com/izadorasobral/github-actions-practice.git
-cd github-actions-practice
-Install dependencies:
+  bash
+     git clone https://github.com/izadorasobral/github-actions-practice.git
+     cd github-actions-practice
+    Install dependencies:
 
 bash
 npm install
 Clone the repository:
-```bash
-git clone https://github.com/izadorasobral/github-actions-practice.git
-cd github-actions-practice
+  bash
+    git clone https://github.com/izadorasobral/github-actions-practice.git
+    cd github-actions-practice
 
 
 To install and run the project locally, follow these steps:
