@@ -9,24 +9,19 @@ on:
       - main
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GH_TOKEN }}  # Usando o token de autenticação
+          token: ${{ secrets.GH_TOKEN }}
 
-      - name: Set up Git config
-        run: |
-          git config --global user.name "Your Name"
-          git config --global user.email "your.email@example.com"
-
-      - name: Debug Node.js and npm
-        run: |
-          node -v
-          npm -v
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
 
       - name: Install dependencies
         run: npm install
@@ -34,15 +29,12 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Debug Git
-        run: |
-          git status
-          git log --oneline -n 5
-
       - name: Debugging info
         run: |
+          echo "Checking Node.js and npm versions..."
+          node -v
+          npm -v
           echo "Checking Git status..."
           git status
           echo "Listing files in the repository..."
           ls -la
-
