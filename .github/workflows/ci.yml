@@ -13,11 +13,21 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'
+
     - name: Install dependencies
       run: npm install
 
-    - name: Ensure Jest is executable
-      run: chmod +x ./node_modules/.bin/jest
-
     - name: Run tests
       run: npm test
+
+    - name: Debugging
+      run: |
+        echo "Checking current directory..."
+        ls -la
+        echo "Checking Git status..."
+        git status
+
