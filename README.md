@@ -50,7 +50,7 @@ plaintext
 DATABASE_URL=your-database-url
 SECRET_KEY=your-secret-key
 
-Testing
+## Testing
 To run the tests, use the following command:
 
 bash
@@ -77,7 +77,7 @@ jobs:
 
       - name: Run a script
         run: echo "Hello, GitHub Actions!"
-Caching
+## Caching
 The caching workflow is configured in .github/workflows/cache.yml:
 
 yaml
@@ -108,7 +108,7 @@ jobs:
         run: |
           ls -la ~/.npm
           npm install
-Matrix Testing
+## Matrix Testing
 The matrix workflow for testing across different Node.jsversions is configured in .github/workflows/matrix.yml:
 
 yaml
@@ -137,12 +137,12 @@ jobs:
 
       - name: Run a script
         run: echo "Testing on Node.js ${{ matrix.node-version }}"
-Contribution
+## Contribution
 If you would like to contribute to this project, follow these steps:
 
 Fork the repository.
 
-Create a new branch:
+## Create a new branch:
 
 bash
 git checkout -b my-new-feature
@@ -156,12 +156,8 @@ bash
 git push origin my-new-feature
 Open a Pull Request for review.
 
-License
+## License
 This project is licensed under the ISC License. See the LICENSE file for more details.
 
-Contributors
-Thanks to the following people who have contributed to this project:
-
-Izadora Sobral
 
 
