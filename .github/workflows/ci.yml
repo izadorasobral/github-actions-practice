@@ -21,17 +21,20 @@ jobs:
         with:
           node-version: '18'  # Substitua pela versão do Node.js que você usa.
 
+      - name: Debug Node.js and npm
+        run: |
+          node -v
+          npm -v
+
       - name: Install dependencies
         run: npm install
 
       - name: Run tests
         run: npm test
 
-      - name: Debugging info (opcional)
+      - name: Debugging info
         run: |
           echo "Checking Git status..."
           git status
           echo "Listing files in the repository..."
           ls -la
-
-
