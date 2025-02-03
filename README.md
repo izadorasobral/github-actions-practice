@@ -8,12 +8,35 @@ This project serves as an example of how to set up and use GitHub Actions in a N
 
 ## Project Structure
 
-- **`server.js`**: Basic server code using Node.js and Express.
-- **`server.test.js`**: Automated tests using Jest and Supertest.
-- **`package.json`**: Node.js project configuration file.
-- **`.github/workflows`**: Contains the GitHub Actions workflows.
+- `server.js`: Basic server code using Node.js and Express.
+- `server.test.js`: Automated tests using Jest and Supertest.
+- `package.json`: Node.js project configuration file.
+- `.github/workflows`: Contains the GitHub Actions workflows.
 
-## Installation
+## User Authentication
+
+We added user registration and authentication features with the following components:
+- **Registration**: A form to register new users, saving their information securely with hashed passwords.
+- **Login**: A form for users to log in with their credentials, authenticated using Passport.js.
+- **Logout**: Functionality to log users out and redirect them to the login page.
+
+### Installation
+
+To install and run the project locally, follow these steps:
+
+Clone the repository:
+```bash
+git clone https://github.com/izadorasobral/github-actions-practice.git
+cd github-actions-practice
+Install dependencies:
+
+bash
+npm install
+Clone the repository:
+```bash
+git clone https://github.com/izadorasobral/github-actions-practice.git
+cd github-actions-practice
+
 
 To install and run the project locally, follow these steps:
 
