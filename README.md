@@ -4,7 +4,7 @@ This project is a practice setup for GitHub Actions to automate testing and depl
 
 ## Description
 
-This project serves as an example of how to set up and use GitHub Actions in a Node.js development environment. We implemented a basic server with Express and added automated tests using Jest and Supertest. Additionally, we configured GitHub Actions workflows to automate CI, caching, and testing across different Node.js versions.
+This project serves as an example of how to set up and use GitHub Actions in a Node.jsdevelopment environment. We implemented a basic server with Express and added automated tests using Jest and Supertest. Additionally, we configured GitHub Actions workflows to automate CI, caching, and testing across different Node.jsversions.
 
 ## Project Structure
 
@@ -12,6 +12,16 @@ This project serves as an example of how to set up and use GitHub Actions in a N
 - **`server.test.js`**: Automated tests using Jest and Supertest.
 - **`package.json`**: Node.js project configuration file.
 - **`.github/workflows`**: Contains the GitHub Actions workflows.
+
+## User Authentication
+
+We added user registration and authentication features with the following components:
+
+Registration: A form to register new users, saving their information securely with hashed passwords.
+
+Login: A form for users to log in with their credentials, authenticated using Passport.js.
+
+Logout: Functionality to log users out and redirect them to the login page.
 
 ## Installation
 
