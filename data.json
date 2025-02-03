@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "username": "izadora",
+    "password": "$2a$10$FTrG1/2l9ZLvd1IovKmTF.QHdu11WWjGQl6gjosU/ckCiBN.m1rBC"
+  },
+  {
+    "id": 2,
+    "username": "florbela",
+    "password": "$2a$10$6bdPtKsgiPBhz7E5yE4wgutRN.QrWrzE1vexnUOdDRNUxQE0bpV5S"
+  },
+  {
+    "id": 3,
+    "username": "tilisco",
+    "password": "$2a$10$5xkSvbt.MCfNwOWVZWJYEObNzYzvkC1ya8mG5lt/rikgxes1D99xS"
+  }
+]
