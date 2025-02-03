@@ -27,16 +27,17 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npm test
+        run:  npm run test
 
       - name: Debugging info
         run: |
-          echo "Checking Node.js and npm versions..."
+          echo "Node.js and npm versions:"
           node -v
           npm -v
-          echo "Checking Git status..."
+          echo "Git status:"
           git status
-          echo "Listing files in the repository..."
+          echo "Files in repository:"
           ls -la
+
 
 
