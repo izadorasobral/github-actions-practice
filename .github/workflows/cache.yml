@@ -33,6 +33,12 @@ jobs:
       - name: List Installed Packages
         run: npm list
 
+      - name: Debugging
+        run: |
+          echo "Checking current directory..."
+          ls -la
+          echo "Checking Git status..."
+          git status
+
       - name: Run tests
         run: npm test
-
